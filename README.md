@@ -11,10 +11,10 @@ Web Design Project for COMMIT's 2026
 
 * **Nama Tim:** commat commit
 * **Anggota Tim:**
-  1. **Muhammad Fahri Ramadhan** - Coordinator
+  1. **Muhammad Fahri Ramadhan** - Coordinator / Penyusun Laporan
   2. **Malik Irhamsyah Perani** - UI/UX Designer
   3. **Muhammad Farrel Abian** - Frontend Developer
-  4. **Rama Dianta Nararya** - QA Tester 
+  4. **Rama Dianta Nararya** - QA Tester / Penyusun Laporan
 ---
 
 ## 📖 Deskripsi Proyek & Fitur Utama
@@ -35,9 +35,7 @@ di lakukakan di dalam kos pada kehidupan sehari hari.
 ## 🛠️ Teknologi yang Digunakan
 
 * **Frontend:** [Misal: HTML5, CSS3, JavaScript / React / Tailwind CSS]
-* **Backend:** [Misal: Node.js / Python / C++ / PHP]
-* **Database:** [Misal: PostgreSQL / MySQL / Firebase / MongoDB]
-* **Tools & Deployment:** [Misal: Git, VS Code, Vercel / Netlify]
+* **Tools & Deployment:** GitHub, VS Code, PowerPoint
 ---
 
 ## 🌐 Tautan Deployment (Live Demo)
