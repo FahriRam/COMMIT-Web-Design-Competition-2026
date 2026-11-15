@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-brand: #2e64ba;
+  --color-brand-dark: #255299;
+  --color-accent: #ff7a00;
+  --color-accent-dark: #e66e00;
+  --color-paper: #f4f7fc;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+}
+
