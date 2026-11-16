@@ -57,6 +57,7 @@ export function jadwalList() {
             </div>
             <div class="flex flex-wrap items-center gap-2">
               ${a.status === 'done' ? '' : `<button data-act="complete" data-id="${a.id}" class="btn-accent !px-4 !py-2 !text-xs"><i data-lucide="circle-check" class="size-4"></i>Selesai</button>
+              <button data-act="overdue" data-id="${a.id}" class="btn-ghost !px-3 !py-2 !text-xs ${a.status === 'overdue' ? '!border-rose-300 !bg-rose-50 !text-rose-700' : ''}"><i data-lucide="circle-alert" class="size-4"></i>${a.status === 'overdue' ? 'Batal terlewat' : 'Tandai terlewat'}</button>
               <select data-swap="${a.id}" aria-label="Alihkan tugas" class="field !w-auto !py-2 !text-xs"><option value="">Alihkan ke...</option>${targets.map((x) => `<option value="${x.id}">${esc(x.name)} (${esc(x.room)})</option>`).join('')}</select>`}
               <button data-act="unassign" data-id="${a.id}" aria-label="Lepas tugas ${esc(t.title)}" class="rounded-full p-2 text-slate-400 hover:bg-rose-50 hover:text-rose-600"><i data-lucide="x" class="size-4"></i></button>
             </div>
@@ -87,7 +88,6 @@ export function pageJadwal() {
   </div>
   <div id="list" class="space-y-3">${jadwalList()}</div>`;
 }
-
 
 
 export const setQuery = (v) => { q = v; };

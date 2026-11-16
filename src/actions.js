@@ -99,6 +99,7 @@ const shuffle = (arr) => {
 export const openShuffle = () => $('#shuffle-dialog').showModal();
 export const closeShuffle = () => $('#shuffle-dialog').close();
 
+// Acak tugas yang belum selesai ke penghuni aktif, tetap seimbang menurut bobot.
 export function shuffleSchedule() {
   closeShuffle();
   const act = active();
@@ -115,4 +116,12 @@ export function shuffleSchedule() {
   });
   S.assigns = [...keep, ...fresh];
   save(); render(); toast(`${fresh.length} tugas diacak ke ${act.length} penghuni.`);
+}
+
+export function toggleOverdue(id) {
+  const a = S.assigns.find((x) => x.id === id);
+  if (!a || a.status === 'done') return;
+  a.status = a.status === 'overdue' ? 'pending' : 'overdue';
+  save(); render();
+  toast(a.status === 'overdue' ? 'Tugas ditandai terlewat.' : 'Tanda terlewat dibatalkan.');
 }

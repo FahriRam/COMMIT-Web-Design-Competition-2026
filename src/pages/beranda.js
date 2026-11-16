@@ -12,7 +12,7 @@ export function pageBeranda() {
   return `
   <section class="overflow-hidden rounded-3xl bg-brand p-8 text-white sm:p-12">
     <p class="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-sm font-semibold"><span class="size-2 rounded-full bg-cyan-200"></span>Sistem piket anak kos</p>
-    <h1 class="mt-4 max-w-2xl text-3xl font-extrabold leading-tight sm:text-5xl">Pembagian tugas kos yang adil dan tanpa drama</h1>
+    <h1 class="mt-4 max-w-2xl text-3xl font-extrabold leading-tight sm:text-5xl">Satu tempat untuk semua jadwal piket kos</h1>
     <p class="mt-3 max-w-xl text-blue-50">${s.d} dari ${s.t} tugas sudah selesai.</p>
     <div class="mt-6 flex flex-wrap gap-3">
       <a href="#/jadwal" class="btn-accent"><i data-lucide="calendar" class="size-4"></i>Lihat jadwal piket</a>

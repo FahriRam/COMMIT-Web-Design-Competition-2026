@@ -14,6 +14,7 @@ document.addEventListener('click', (e) => {
     complete: () => A.openDone(id),
     'close-done': A.closeDone,
     unassign: () => A.unassign(id),
+    overdue: () => A.toggleOverdue(id),
     'open-shuffle': A.openShuffle,
     'close-shuffle': A.closeShuffle,
     shuffle: A.shuffleSchedule,

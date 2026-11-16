@@ -8,7 +8,7 @@ const FAQ = [
   ['Bagaimana jika saya berhalangan di hari piket?',
    'Pada tugas milik kamu di halaman Jadwal, pilih penghuni lain lewat dropdown "Alihkan ke..." sesuai kesepakatan bersama. Kalau berhalangan lama, ubah statusmu menjadi Cuti di Buat Jadwal lalu klik Acak jadwal.'],
   ['Bagaimana cara memberi dan menyelesaikan tugas?',
-   'Di halaman Jadwal, buka nama penghuni lalu pilih tugas di dropdown "Beri tugas". Setelah dikerjakan, klik Selesai, tulis catatan jika perlu, lalu klik Tugas selesai. Poin langsung bertambah di profil penghuni dan terlihat di Beranda.'],
+   'Di halaman Jadwal, buka nama penghuni lalu pilih tugas di dropdown "Beri tugas". Setelah dikerjakan, klik Selesai, tulis catatan jika perlu, lalu klik Tugas selesai. Poin langsung bertambah di profil penghuni dan terlihat di Beranda. Kalau tugas tidak dikerjakan sesuai jadwal, klik Tandai terlewat supaya tercatat di kartu Tugas terlewat pada Beranda.'],
   ['Di mana data saya disimpan?',
    'Data tersimpan di browser perangkat ini (localStorage), bukan di server. Jangan hapus data browser kalau ingin menyimpannya. Untuk mengosongkan semuanya, pakai tombol Reset semua data di halaman Buat Jadwal.'],
 ];
