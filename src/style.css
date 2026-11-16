@@ -7,6 +7,12 @@
   --color-accent-dark: #e66e00;
   --color-paper: #f4f7fc;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --shadow-xs: 0 0 #0000;
+  --shadow-sm: 0 0 #0000;
+  --shadow-md: 0 0 #0000;
+  --shadow-lg: 0 0 #0000;
+  --shadow-xl: 0 0 #0000;
+  --shadow-2xl: 0 0 #0000
 }
 
 @utility btn {
