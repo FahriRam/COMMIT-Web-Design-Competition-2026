@@ -3,7 +3,7 @@ Web Design Project for COMMIT's 2026
 
 # 🚀 Website Manager Kegiatan Kos
 
-> **Website digunakan untuk membagi tugas antar mahasiswa dalam kos**
+> **Website yang dapat digunakan untuk membuat sistem piket dan membagi rata tugas aktivitas sehari-hari antar mahasiswa dalam suatu rumah atau apartemen kos**
 
 ---
 
@@ -18,11 +18,9 @@ Web Design Project for COMMIT's 2026
 ---
 
 ## 📖 Deskripsi Proyek & Fitur Utama
-Proyek ini ditujukan untuk memudahkan mahasiswa untuk membuat jadwal berupa tugas-tugas dan kegiatan yang harus
-di lakukakan di dalam kos pada kehidupan sehari hari.
 
 ### Deskripsi
-
+Manager Kegiatan Kos adalah aplikasi web yang dapat membantu membagi dan merotasi tugas piket dalam Rumah/Apartemen kos yang dihuni oleh mahasiswa secara otomatis. Pengguna cukup memasukkan jumlah penghuni, nama - nama penghuni, nomor kamar penghuni, dan daftar tugas yang dapat dilakukan, lalu sistem menampilkan jadwal yang adil lewat antarmuka dropdown. Seluruh penghuni merujuk pada satu jadwal yang sama, tanpa catatan kertas atau pesan berantai.
 
 ### Fitur Utama
 - **Input Data Penghuni:** menambah, mengubah, dan menghapus data nama serta nomor kamar.
@@ -36,7 +34,7 @@ di lakukakan di dalam kos pada kehidupan sehari hari.
 ## 🛠️ Teknologi yang Digunakan
 
 * **Frontend:** [Misal: HTML5, CSS3, JavaScript / React / Tailwind CSS]
-* **Tools & Deployment:** GitHub, VS Code, PowerPoint
+* **Tools & Deployment:** GitHub, VS Code, Google docs, figma
 ---
 
 ## 🌐 Tautan Deployment (Live Demo)
