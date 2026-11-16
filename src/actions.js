@@ -1,4 +1,3 @@
-// Aksi yang mengubah data: beri tugas, selesaikan, alihkan, hapus, dll.
 import { S, save, uid, task, lightest } from './store.js';
 import { $, toast } from './ui.js';
 import { render } from './router.js';
