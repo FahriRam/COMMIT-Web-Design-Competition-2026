@@ -1,4 +1,4 @@
-import { S, save, uid, task, lightest } from './store.js';
+import { S, save, uid, task, active, lightest } from './store.js';
 import { $, toast } from './ui.js';
 import { render } from './router.js';
 
@@ -88,4 +88,31 @@ export const closeReset = () => $('#reset-dialog').close();
 export function resetAll() {
   S.residents = []; S.tasks = []; S.assigns = [];
   closeReset(); save(); render(); toast('Semua data sudah dihapus.');
+}
+
+const shuffle = (arr) => {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+};
+
+export const openShuffle = () => $('#shuffle-dialog').showModal();
+export const closeShuffle = () => $('#shuffle-dialog').close();
+
+export function shuffleSchedule() {
+  closeShuffle();
+  const act = active();
+  if (!act.length || !S.tasks.length) return toast('Tambahkan penghuni aktif dan tugas dulu.');
+  const keep = S.assigns.filter((a) => a.status === 'done');
+  const doneIds = new Set(keep.map((a) => a.tid));
+  const todo = shuffle(S.tasks.filter((t) => !doneIds.has(t.id))).sort((a, b) => b.w - a.w);
+  const l = Object.fromEntries(act.map((r) => [r.id, 0]));
+  const fresh = todo.map((t) => {
+    const min = Math.min(...Object.values(l));
+    const r = shuffle(act.filter((x) => l[x.id] === min))[0];
+    l[r.id] += t.w;
+    return { id: uid('a'), rid: r.id, tid: t.id, status: 'pending', note: '', at: '' };
+  });
+  S.assigns = [...keep, ...fresh];
+  save(); render(); toast(`${fresh.length} tugas diacak ke ${act.length} penghuni.`);
 }

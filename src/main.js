@@ -14,6 +14,9 @@ document.addEventListener('click', (e) => {
     complete: () => A.openDone(id),
     'close-done': A.closeDone,
     unassign: () => A.unassign(id),
+    'open-shuffle': A.openShuffle,
+    'close-shuffle': A.closeShuffle,
+    shuffle: A.shuffleSchedule,
     'open-reset': A.openReset,
     'close-reset': A.closeReset,
     'reset-all': A.resetAll,
@@ -39,7 +42,6 @@ document.addEventListener('input', (e) => {
   if (e.target.id === 'q') { setQuery(e.target.value); refreshList(); }
 });
 
-// ingat accordion yang terbuka (event toggle tidak bubble, jadi pakai capture)
 document.addEventListener('toggle', (e) => {
   const id = e.target.dataset?.rid;
   if (id) rememberOpen(id, e.target.open);

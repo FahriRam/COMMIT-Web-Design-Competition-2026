@@ -71,7 +71,10 @@ export function pageJadwal() {
   return `
   <div class="mb-6 flex flex-wrap items-end justify-between gap-3">
     <div><h1 class="text-2xl font-extrabold sm:text-3xl">Jadwal piket</h1><p class="text-slate-600">Buka nama penghuni untuk melihat dan memberi tugas.</p></div>
-    <a href="#/buat" class="btn-brand"><i data-lucide="plus" class="size-4"></i>Buat jadwal</a>
+    <div class="flex flex-wrap gap-2">
+      <button data-act="open-shuffle" class="btn-accent"><i data-lucide="shuffle" class="size-4"></i>Acak jadwal</button>
+      <a href="#/buat" class="btn-brand"><i data-lucide="plus" class="size-4"></i>Buat jadwal</a>
+    </div>
   </div>
   <div class="mb-4 flex flex-col gap-3 sm:flex-row">
     <label class="relative flex-1"><span class="sr-only">Cari</span><i data-lucide="search" class="absolute left-3 top-3.5 size-4 text-slate-400"></i>
@@ -86,7 +89,7 @@ export function pageJadwal() {
 }
 
 
-// state pencarian dan accordion, diatur dari main.js
+
 export const setQuery = (v) => { q = v; };
 export const setFilter = (v) => { filter = v; };
 export const rememberOpen = (id, isOpen) => { isOpen ? open.add(id) : open.delete(id); };

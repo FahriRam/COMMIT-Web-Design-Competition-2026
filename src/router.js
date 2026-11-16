@@ -1,4 +1,3 @@
-// Router sederhana berbasis hash: #/beranda, #/jadwal, #/buat
 import { $, icons } from './ui.js';
 import { pageBeranda } from './pages/beranda.js';
 import { pageJadwal } from './pages/jadwal.js';
