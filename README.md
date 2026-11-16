@@ -25,10 +25,11 @@ di lakukakan di dalam kos pada kehidupan sehari hari.
 
 
 ### Fitur Utama
-- **[Fitur 1]:** [Penjelasan singkat fungsi fitur 1]
-- **[Fitur 2]:** [Penjelasan singkat fungsi fitur 2]
-- **[Fitur 3]:** [Penjelasan singkat fungsi fitur 3]
-- **[Fitur 4]:** [Penjelasan singkat fungsi fitur 4]
+- **Input Data Penghuni:** menambah, mengubah, dan menghapus data nama serta nomor kamar.
+- **Daftar Tugas:** mengatur tugas kebersihan, seperti menyapu, mencuci peralatan dapur, dan membersihkan kamar mandi.
+- **Penjadwalan Otomatis:** membagi dan merotasi tugas secara merata, harian maupun mingguan.
+- **Tampilan Dropdown:** penghuni memilih nama atau nomor kamar untuk langsung melihat tugasnya.
+- **Jadwal Keseluruhan:** tabel yang menunjukkan siapa mengerjakan apa pada periode tertentu.
 
 ---
 
