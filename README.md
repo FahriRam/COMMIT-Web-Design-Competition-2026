@@ -1,7 +1,7 @@
 # COMMIT-Web-Design-Competition-2026
 Web Design Project for COMMIT's 2026
 
-# 🚀 Website Manager Kegiatan Kos
+# 🚀 Website Manager Kegiatan Kos (Kosify)
 
 > **Website yang dapat digunakan untuk membuat sistem piket dan membagi rata tugas aktivitas sehari-hari antar mahasiswa dalam suatu rumah atau apartemen kos**
 
@@ -20,7 +20,7 @@ Web Design Project for COMMIT's 2026
 ## 📖 Deskripsi Proyek & Fitur Utama
 
 ### Deskripsi
-Manager Kegiatan Kos adalah aplikasi web yang dapat membantu membagi dan merotasi tugas piket dalam Rumah/Apartemen kos yang dihuni oleh mahasiswa secara otomatis. Pengguna cukup memasukkan jumlah penghuni, nama - nama penghuni, nomor kamar penghuni, dan daftar tugas yang dapat dilakukan, lalu sistem menampilkan jadwal yang adil lewat antarmuka dropdown. Seluruh penghuni merujuk pada satu jadwal yang sama, tanpa catatan kertas atau pesan berantai.
+Kosify adalah aplikasi web manager kegiatan kos yang dapat membantu membagi dan merotasi tugas piket dalam Rumah/Apartemen kos yang dihuni oleh mahasiswa secara otomatis. Pengguna cukup memasukkan jumlah penghuni, nama - nama penghuni, nomor kamar penghuni, dan daftar tugas yang dapat dilakukan, lalu sistem menampilkan jadwal yang adil lewat antarmuka dropdown. Seluruh penghuni merujuk pada satu jadwal yang sama, tanpa catatan kertas atau pesan berantai.
 
 ### Fitur Utama
 - **Input Data Penghuni:** menambah, mengubah, dan menghapus data nama serta nomor kamar.
@@ -32,29 +32,65 @@ Manager Kegiatan Kos adalah aplikasi web yang dapat membantu membagi dan merotas
 ---
 
 ## 🛠️ Teknologi yang Digunakan
+- **Core & Build Tool:** HTML5, JavaScript (ES Modules), Vite, GitHub (Version Control).
+- **Styling:** Tailwind CSS v4
+- **Hosting & Deployment:** Netlify
 
-* **Frontend:** [Misal: HTML5, CSS3, JavaScript / React / Tailwind CSS]
-* **Tools & Deployment:** GitHub, VS Code, Google docs, figma
+## 📁 Penggunaan AI, template, starter code, dan sumber aset.
+**Alat AI Yang digunakan**
+- Claude (Anthropic): bantuan utama untuk debugging, perbaikan pada kode yang kurang efisien, dan pemecahan kode menjadi modul.
+- GitHub Copilot (VS Code): bantuan saat menulis kode di editor, terutama untuk masalah teknis seperti syntax.
+**Bagian Yang Dibantu AI**
+- Claude, debugging: mencari penyebab dan memperbaiki error, error import modul, dan bug pada alur fitur.
+- Claude, perbaikan kode: saran perbaikan kecil pada kode yang kurang efisien.
+- Claude, struktur proyek: pemecahan kode menjadi modul ES: store.js, ui.js, actions.js, router.js, pages/.
+- GitHub Copilot, penulisan kode: bantuan syntax dan masalah teknis saat menulis kode di VS Code.
+**template**
+- Vite (template vanilla): dasar proyek dan build tool. Lisensi MIT.
+**Sumber Asset dan Pihak Ketiga**
+- Lucide: ikon. Lisensi ISC.
+- Plus Jakarta Sans (Google Fonts): font. Lisensi SIL Open Font License 1.1.
+
 ---
 
 ## 🌐 Tautan Deployment (Live Demo)
 
-Aplikasi dapat diakses secara langsung melalui tautan berikut:
-👉 **[URL Live Demo Kamu, misal: https://nama-proyek.vercel.app]**
+Website dapat diakses secara langsung melalui tautan berikut:
+https://commint-kosify.netlify.app/
 
 ---
 
 ## ⚙️ Petunjuk Instalasi & Cara Menjalankan Proyek
 
-Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal di komputer kamu:
+Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal:
 
 ### Prasyarat (*Prerequisites*)
-Pastikan kamu sudah menginstal:
-* [Git](https://git-scm.com/)
-* [Node.js / Python / Kompiler sesuai tech-stack kamu] (versi X.X atau lebih baru)
+* Node.js versi LTS terbaru (disarankan 20.19 atau lebih baru)
+* npm (sudah ikut terpasang bersama Node.js)
 
-### Langkah-langkah
-1. **Clone repositori ini:**
+### Langkah-langkah menjalankan secara lokal:
+1. **Clone repositori dan masuk ke foldernya:**
    ```bash
-   git clone [https://github.com/username/nama-repositori.git](https://github.com/username/nama-repositori.git)
-   cd nama-repositori
+   git clone https://github.com/FahriRam/COMMIT-Web-Design-Competition-2026
+   cd COMMIT-Web-Design-Competition-2026
+   ```
+2. **Pasang Dependensi:**
+   ```bash
+   npm install
+   ```
+3. **Jalankan Server Pengembangan**
+   ```bash
+   npm run dev
+   ```
+4. **Buka alamat yang muncul di terminal**, Misalnya `http://localhost:5173.`
+
+**Perintah lain**
+  - Membuat versi produksi di folder dist
+   ```bash
+   npm run build
+   ```
+  - Menjalankan hasil build secara lokal untuk dicoba
+   ```bash
+   npm run preview
+   ```
+
