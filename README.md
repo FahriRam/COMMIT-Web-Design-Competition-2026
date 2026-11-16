@@ -40,13 +40,16 @@ Kosify adalah aplikasi web manager kegiatan kos yang dapat membantu membagi dan 
 **Alat AI Yang digunakan**
 - Claude (Anthropic): bantuan utama untuk debugging, perbaikan pada kode yang kurang efisien, dan pemecahan kode menjadi modul.
 - GitHub Copilot (VS Code): bantuan saat menulis kode di editor, terutama untuk masalah teknis seperti syntax.
+
 **Bagian Yang Dibantu AI**
 - Claude, debugging: mencari penyebab dan memperbaiki error, error import modul, dan bug pada alur fitur.
 - Claude, perbaikan kode: saran perbaikan kecil pada kode yang kurang efisien.
 - Claude, struktur proyek: pemecahan kode menjadi modul ES: store.js, ui.js, actions.js, router.js, pages/.
 - GitHub Copilot, penulisan kode: bantuan syntax dan masalah teknis saat menulis kode di VS Code.
+
 **template**
 - Vite (template vanilla): dasar proyek dan build tool. Lisensi MIT.
+
 **Sumber Asset dan Pihak Ketiga**
 - Lucide: ikon. Lisensi ISC.
 - Plus Jakarta Sans (Google Fonts): font. Lisensi SIL Open Font License 1.1.
@@ -82,7 +85,7 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek secara lokal:
    ```bash
    npm run dev
    ```
-4. **Buka alamat yang muncul di terminal**, Misalnya `http://localhost:5173.`
+4. **Buka alamat yang muncul di terminal**, Misalnya `http://localhost:5173`.
 
 **Perintah lain**
   - Membuat versi produksi di folder dist
