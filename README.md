@@ -11,7 +11,7 @@ Web Design Project for COMMIT's 2026
 
 * **Nama Tim:** commat commit
 * **Anggota Tim:**
-  1. **Muhammad Fahri Ramadhan** - Coordinator & Penyusun Laporan
+  1. **Muhammad Fahri Ramadhan** - Ketua tim (koordinator) & Penyusun Laporan
   2. **Malik Irhamsyah Perani** - UI/UX Designer
   3. **Muhammad Farrel Abian** - Frontend Developer & UI/UX Designer
   4. **Rama Dianta Nararya** - QA Tester & Penyusun Laporan
