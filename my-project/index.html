@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Kosify - Piket Kos Pintar</title>
+  </head>
+
+  <body class="flex min-h-screen flex-col bg-paper font-sans text-slate-800">
+    <!-- HEADER (dipakai semua halaman) -->
+    <header class="sticky top-0 z-40 bg-brand text-white shadow-md">
+      <div
+        class="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6"
+      >
+        <a href="#/beranda" class="flex items-center gap-2.5">
+          <span
+            class="flex size-10 items-center justify-center rounded-xl border border-white/30 bg-white/15"
+          >
+            <i data-lucide="house" class="size-5"></i>
+          </span>
+          <span class="text-xl font-extrabold tracking-tight">Kosify</span>
+        </a>
+
+        <nav
+          id="nav"
+          class="absolute left-0 top-16 hidden w-full flex-col gap-1 bg-brand p-3 shadow-lg md:static md:flex md:w-auto md:flex-row md:p-0 md:shadow-none"
+        >
+          <a
+            data-route="beranda"
+            href="#/beranda"
+            class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-white/15"
+            >Beranda</a
+          >
+          <a
+            data-route="jadwal"
+            href="#/jadwal"
+            class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-white/15"
+            >Jadwal Piket</a
+          >
+          <a
+            data-route="buat"
+            href="#/buat"
+            class="rounded-full px-4 py-2 text-sm font-semibold hover:bg-white/15"
+            >Buat Jadwal</a
+          >
+        </nav>
+
+        <button
+          data-act="menu"
+          aria-label="Buka menu"
+          class="rounded-full p-2 hover:bg-white/15 md:hidden"
+        >
+          <i data-lucide="menu" class="size-6"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- KONTEN HALAMAN (diisi src/main.js) -->
+    <main
+      id="app"
+      class="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6"
+    ></main>
+
+    <div
+      id="toast"
+      class="pointer-events-none fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-2xl"
+      role="status"
+    ></div>
+
+    <!-- FOOTER (dipakai semua halaman) -->
+    <footer class="bg-slate-900 text-slate-300">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between"
+      >
+        <div>
+          <p class="flex items-center gap-2 text-lg font-extrabold text-white">
+            <i data-lucide="house" class="size-5 text-accent"></i> Kosify
+          </p>
+          <p class="mt-1 text-sm">
+            Jadwal piket kos yang adil, otomatis, dan anti-drama.
+          </p>
+        </div>
+        <div class="flex gap-5 text-sm font-semibold">
+          <a href="#/beranda" class="hover:text-white">Beranda</a>
+          <a href="#/jadwal" class="hover:text-white">Jadwal Piket</a>
+          <a href="#/buat" class="hover:text-white">Buat Jadwal</a>
+        </div>
+      </div>
+      <p
+        class="border-t border-white/10 py-4 text-center text-xs text-slate-400"
+      >
+        &copy; 2026 Kosify. Dibuat untuk anak kos.
+      </p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
