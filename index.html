@@ -78,22 +78,23 @@
     <div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-50 hidden -translate-x-1/2 items-center gap-2 rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-2xl" role="status"></div>
 
     <!-- FOOTER (dipakai semua halaman) -->
-    <footer class="bg-slate-900 text-slate-300">
-      <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between">
-        <div>
-          <p class="flex items-center gap-2 text-lg font-extrabold text-white">
-            <i data-lucide="house" class="size-5 text-accent"></i> Kosify
-          </p>
-          <p class="mt-1 text-sm">Jadwal piket kos yang adil, otomatis, dan anti-drama.</p>
+    <footer class="bg-brand text-white">
+      <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6 md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-3">
+          <span class="flex size-10 items-center justify-center rounded-xl border border-white/30 bg-white/15">
+            <i data-lucide="house" class="size-5"></i>
+          </span>
+          <div>
+            <p class="text-lg font-extrabold leading-tight">Kosify</p>
+            <p class="text-sm text-blue-100">Jadwal piket kos yang adil, otomatis, dan anti-drama.</p>
+          </div>
         </div>
-        <div class="flex gap-5 text-sm font-semibold">
-          <a href="#/beranda" class="hover:text-white">Beranda</a>
-          <a href="#/jadwal" class="hover:text-white">Jadwal Piket</a>
-          <a href="#/buat" class="hover:text-white">Buat Jadwal</a>
-          <a href="#/panduan" class="hover:text-white">Panduan</a>
-        </div>
+        <ul class="space-y-2 text-sm font-medium">
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="size-4 text-blue-100"></i><a href="mailto:halo@kosify.example" class="hover:underline">halo@kosify.example</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="size-4 text-blue-100"></i><span>+62 812-0000-0000</span></li>
+        </ul>
       </div>
-      <p class="border-t border-white/10 py-4 text-center text-xs text-slate-400">&copy; 2026 Kosify. Dibuat untuk anak kos.</p>
+      <p class="border-t border-white/15 py-4 text-center text-xs text-blue-100">&copy; 2026 Kosify. Dibuat untuk anak kos.</p>
     </footer>
 
     <script type="module" src="/src/main.js"></script>

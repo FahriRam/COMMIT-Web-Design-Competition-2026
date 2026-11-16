@@ -1,10 +1,10 @@
 import {
   createIcons, House, Calendar, ClipboardList, Users, CircleCheck, CircleAlert, Clock,
   Trash2, Droplets, Utensils, Wind, Menu, X, Plus, UserPlus, ArrowLeftRight,
-  RefreshCw, Sparkles, Plane, Award, Flame, ChevronDown, Search, Check, BookOpen, Shuffle, CircleHelp,
+  RefreshCw, Sparkles, Plane, Award, Flame, ChevronDown, Search, Check, BookOpen, Shuffle, CircleHelp, Mail, Phone,
 } from 'lucide';
 
-const ICONS = { House, Calendar, ClipboardList, Users, CircleCheck, CircleAlert, Clock, Trash2, Droplets, Utensils, Wind, Menu, X, Plus, UserPlus, ArrowLeftRight, RefreshCw, Sparkles, Plane, Award, Flame, ChevronDown, Search, Check, BookOpen, Shuffle, CircleHelp };
+const ICONS = { House, Calendar, ClipboardList, Users, CircleCheck, CircleAlert, Clock, Trash2, Droplets, Utensils, Wind, Menu, X, Plus, UserPlus, ArrowLeftRight, RefreshCw, Sparkles, Plane, Award, Flame, ChevronDown, Search, Check, BookOpen, Shuffle, CircleHelp, Mail, Phone };
 export const icons = () => createIcons({ icons: ICONS });
 
 
